@@ -11,29 +11,28 @@ import {
     Undo as IconUndo
 } from 'lucide-react';
 import { observer } from "mobx-react-lite";
-import Head from "next/head";
 import { ChangeEvent, ReactNode, useEffect, useState } from "react";
+
+
+export const metadata = {
+    title: '设置',
+};
 
 export default function Settings() {
     return (
-        <>
-            <Head>
-                <title>设置</title>
-            </Head>
-            <Layout>
-                <BaseMargin>
-                    <h1 className="text-3xl font-bold mb-6">设置</h1>
-                    <Tab
-                        className="mb-6"
-                        tabs={[
-                            { title: "常规", content: <GeneralTab /> },
-                            { title: "数据", content: <DataTab /> },
-                            { title: "关于", content: <AboutTab /> }
-                        ]}
-                    />
-                </BaseMargin>
-            </Layout>
-        </>
+        <Layout>
+            <BaseMargin>
+                <h1 className="text-3xl font-bold mb-6">设置</h1>
+                <Tab
+                    className="mb-6"
+                    tabs={[
+                        { title: "常规", content: <GeneralTab /> },
+                        { title: "数据", content: <DataTab /> },
+                        { title: "关于", content: <AboutTab /> }
+                    ]}
+                />
+            </BaseMargin>
+        </Layout>
     )
 }
 
