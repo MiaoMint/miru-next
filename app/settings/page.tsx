@@ -14,9 +14,7 @@ import { observer } from "mobx-react-lite";
 import { ChangeEvent, ReactNode, useEffect, useState } from "react";
 
 
-export const metadata = {
-    title: '设置',
-};
+
 
 export default function Settings() {
     return (

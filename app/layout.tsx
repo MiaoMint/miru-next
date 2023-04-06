@@ -1,8 +1,6 @@
 import '@/styles/globals.css'
 import RootProvider from './client/RootProvider'
-export const metadata = {
-    title: 'Miru',
-}
+
 
 export default function RootLayout({
     children,

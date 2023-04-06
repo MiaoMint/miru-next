@@ -16,9 +16,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useInfiniteQuery } from "react-query";
 
-export const metadata = {
-    title: '搜索',
-};
 
 const Search = observer(() => {
 

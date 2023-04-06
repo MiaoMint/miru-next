@@ -38,9 +38,7 @@ export default function Extensions() {
     )
 }
 
-export const metadata = {
-    title: '扩展',
-};
+
 
 function InstalledTab() {
 
